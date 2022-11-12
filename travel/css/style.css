@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.promo {
+    height: 789px;
+    background: url(../img/travel_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 0;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:nth-child(1) {
+    color: #FFC700;
+}
+
+.promo h1 {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 117px;
+    color: #FFFFFF;
+    max-width: 790px;
+    margin-top: 103px;
+}
+
+.btn {
+    background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+    border-radius: 60px;
+    width: 230px;
+    height: 50px;
+    color: white;
+    border: 0;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 43px;
+    cursor: pointer;
+}
+
+/* popular */
+.popular {
+    padding: 90px 0 110px;
+}
+
+.popular .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.main_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #0499DD;
+}
+
+.popular .title a {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration-line: underline;
+    color: #282828;
+}
+
+.popular .title a:hover {
+    text-decoration: none;
+}
+
+.tours {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tour {
+    padding: 211px 16px 42px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.tour h3 {
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFC700;
+    margin: 5px 0 10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.details div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 25px;
+}
+
+/* about */
+.about {
+    height: 749px;
+    background: url(../img/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 136px;
+}
+
+.elem {
+    margin: 0 auto;
+    background: #EDEDED;
+    width: 542px;
+    height: 476px;
+    border-radius: 10px;
+
+    padding-top: 61px;
+    padding-left: 85px;
+    padding-right: 75px;
+    padding-bottom: 105px;
+}
+
+.elem h2 {
+    margin-bottom: 30px;
+}
+
+.elem p {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #282828;
+}
+
+/* excursions */
+.excursions {
+    padding: 99px 0;
+}
+
+.excursion_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px;
+    margin-top: 90px;
+}
+
+.excursion_item {
+    display: flex;
+    gap: 20px;
+}
+
+.excursion_item h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #0499DD;
+    margin-bottom: 10px;
+}
+
+.excursion_item p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #282828;
+}
+
+.excursion_desc {
+    max-width: 550px;
+    margin: 60px auto 0;
+    text-align: center;
+}
+
+.excursion_desc p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #282828;
+}
+
+.excursion_desc .btn {
+    margin-top: 20px;
+}
+
+/* /gallery */
+.gallery {
+    padding-bottom: 96px;
+}
+
+.gallery_grid {
+    display: grid;
+    grid-template-columns: 172px 212px 288px 212px 172px;
+    grid-template-rows: 281px 123px 123px;
+    gap: 20px 16px;
+}
+
+.gallery_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.gallery_item:nth-child(1) {
+    grid-column: 1/3;
+}
+
+.gallery_item:nth-child(2) {
+    grid-row: 1/4;
+    grid-column: 3;
+}
+
+.gallery_item:nth-child(5) {
+    grid-column: 1;
+    grid-row: 2/4;
+}
+
+.gallery_item:nth-child(8) {
+    grid-column: 4/6;
+    grid-row: 2/4;
+}
+
+@media (max-width: 1200px) {
+    .gallery_grid {
+        grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    }
+
+    .promo h1 {
+        font-size: 80px;
+    }
+
+    .tours {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container h1 {
+        
+    }
+}
